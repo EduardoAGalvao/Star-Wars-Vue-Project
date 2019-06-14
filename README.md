@@ -1,6 +1,5 @@
 # Star-Wars-Vue-Project
 A Vue project consuming an Star Wars API, in two ways: framework and server-side.
-
 ---
 
 The main goal was to build an application that returns characters and it's pictures from Star Wars API using Vue framework and Vue from the server.
@@ -22,9 +21,9 @@ https://www.youtube.com/watch?v=uR7EbQImYmo "CSS Card Effect")
 
 - [WebDev SHORTS - Parallax Pixel Background Animation | HTML & CSS](
 https://www.youtube.com/watch?v=aywzn9cf-_U "CSS Stars Background Effect")
+---
 
 ## Two ways, one goal
----
 
 Both projects are equal in goals, but made differently. One using a vue file and other using module programming. Both are limited to be used in Chrome browser, due to the stars effect.
 
@@ -38,3 +37,4 @@ To use that, must be created a Vue App, first **installing Node.js** and after *
 
 After created, change the folder name to "src", there's gonna be all the modules needed to perform in the localhost after type the command in the main folder: **npm run serve**.
 
+*Everything made with a lot of curiosity and programming passion*
