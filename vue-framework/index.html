@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="./img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <title>Vue.js - Star Wars API</title>
+  </head>
+  <body>
+    <section class="wrapper" id="sw-root">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      <div id="app">
+
+        <!--Inicio de código com caixa de pesquisa e cards-->
+        <div class="divMaster">
+
+          <div class="header">
+            <h1>Framework <font>Vue.js</font> - API Star Wars</h1>
+          </div>
+
+          <!--Caixa de Pesquisa-->
+          <div class="searchCharacter">
+            <div class="searchEsquerda">
+                <p>Search for a character:</p>
+            </div>
+            <div class="searchDireita">
+              <input id="pesquisa" type="text" class="inputSearch">
+              <button id="btn" v-on:click="pesquisarPersonagens()" class="btnSearch"><i></i></button>
+            </div>
+          </div>
+          
+          <!--Exibição de Personagens-->
+          <div v-for="personagem in grupoPersonagens" :key="personagem.name">
+            <div class="containerItem">
+              <div class="card">
+                <div class="title">
+                  <div class="sliderTitle">
+                    <h3>{{personagem.name}}</h3>
+                  </div>
+                </div>
+
+                <!--Card do Personagem-->
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+
+                    <!--Card - Parte da Frente-->
+                    <div class="flip-card-front">
+                      <div class="sliderBody">
+                        <img v-bind:src="`https://starwars-visualguide.com/assets/img/characters/${personagem.url.replace(/[^0-9 ]/g,'')}.jpg`"/>
+                      </div>
+                    </div>
+
+                    <!--Card - Parte de Trás-->
+                    <div class="flip-card-back">
+                      <div class="back-header">
+                        <h2>{{personagem.name}}</h2>
+                      </div>
+                      <div class="back-footer">
+                        <p>Height: {{personagem.height}}</p>
+                        <p>Birth Year: {{personagem.birth_year}} </p> 
+                        <p>Hair Color: {{personagem.hair_color}}</p>
+                        <p>Eye Color: {{personagem.eye_color}}</p>
+                        <p>Mass: {{personagem.mass}}</p>
+                        <p>Gender: {{personagem.gender}}</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+            
+    </section>
+    <script type="text/javascript" src="./js/vue.js"></script>
+    <script type="text/javascript" src="./js/action.js"></script>
+  </body>
+  </html>
