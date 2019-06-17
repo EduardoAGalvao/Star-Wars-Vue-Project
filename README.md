@@ -4,6 +4,8 @@ A Vue project consuming an Star Wars API, in two ways: framework and server-side
 
 The main goal was to build an application that returns characters and it's pictures from Star Wars API using Vue framework and Vue from the server.
 
+<img src="./gif/teste_oficial_aplicacao.gif" width="900" height="450" alt="Exibition Gif" title="Exibition Gif"/>
+
 This project was built in SENAI technical school with the following goals:
 
 - Learn about Vue.js and it's application; 
@@ -35,6 +37,14 @@ In this folder, there's a few files using a separeted Vue file and applying the 
 
 To use that, must be created a Vue App, first **installing Node.js** and after **creating the vue app** by vue cli installation. More information can be found in the [Vue Documentation Website](https://vuejs.org/ "Vue Documentation Website") and install Node.js (npm included) in the [Node.js Official Website](https://nodejs.org/en/ "Node.js Official Website")
 
+<img src="./gif/checando_codigo.gif" width="900" height="450" alt="Exibition Gif" title="Exibition Gif"/>
+
 After created, change the folder name to "src", there's gonna be all the modules needed to perform in the localhost after type the command in the main folder: **npm run serve**.
+
+<img src="./gif/subindo_servidor.gif" width="900" height="450" alt="Exibition Gif" title="Exibition Gif"/>
+
+Version: 1.0
+
+Creation: 06/06/2019
 
 *Everything made with a lot of curiosity and programming passion*
